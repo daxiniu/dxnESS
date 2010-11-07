@@ -1,5 +1,4 @@
 use daxiniu;
-
 drop table user;
 drop table admin;
 drop table post;
