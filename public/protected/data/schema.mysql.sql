@@ -1,7 +1,12 @@
 use daxiniu;
-
+drop table user;
+drop table admin;
+drop table post;
+drop table attachment;
+drop table category;
 CREATE TABLE IF NOT EXISTS user (
-  username varchar(32) NOT NULL primary key,
+  id int auto_increment NOT NULL  primary key,
+  username varchar(32) NOT NULL unique,
   password varchar(32) NOT NULL,
   email varchar(256) not null default '0',
   user_type int(3) default 0,
@@ -10,8 +15,11 @@ CREATE TABLE IF NOT EXISTS user (
   reg_time TIMESTAMP NOT NULL DEFAULT NOW(),
   last_time TIMESTAMP NOT NULL,
   admin_id varchar(32) NOT NULL default '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8  COLLATE=utf8_bin;CREATE TABLE IF NOT EXISTS admin (
-  username varchar(32) NOT NULL primary key,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8  COLLATE=utf8_bin;
+
+CREATE TABLE IF NOT EXISTS admin (
+   id int auto_increment NOT NULL  primary key,
+  username varchar(32) NOT NULL unique,
   password varchar(32) NOT NULL,
   role int(3) default 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8  COLLATE=utf8_bin;
@@ -41,7 +49,9 @@ CREATE TABLE IF NOT EXISTS attachment (
   use_type int(3) default 0,
   status int(3) default 0,
   file_type varchar(32) not null
-) ENGINE=InnoDB DEFAULT CHARSET=utf8  COLLATE=utf8_bin;CREATE TABLE IF NOT EXISTS category (
+) ENGINE=InnoDB DEFAULT CHARSET=utf8  COLLATE=utf8_bin;
+
+CREATE TABLE IF NOT EXISTS category (
   id int auto_increment NOT NULL primary key,
   name varchar(64) NOT NULL ,
   short_name varchar(32) NOT NULL ,
