@@ -2,10 +2,10 @@
 
 mkdir public/protected/runtime
 mkdir public/protected/data
-mkdir public/assets
+mkdir assets
 chmod -R 777 public/protected/runtime
 chmod -R 777 public/protected/data
-chmod -R 777 public/assets
+chmod -R 777 assets
 
 mkdir admin/protected/runtime
 mkdir admin/protected/data

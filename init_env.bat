@@ -1,6 +1,6 @@
 mkdir "public\protected\runtime"
 mkdir "public\protected\data"
-mkdir "public\assets"
+mkdir "assets"
 
 mkdir "admin\protected\runtime"
 mkdir "admin\protected\data"
