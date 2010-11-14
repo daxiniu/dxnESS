@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'大犀牛经验分享系统',
+	'name'=>'大犀牛经验',
 	'language'=>'zh_cn',
 
 	// preloading 'log' component
