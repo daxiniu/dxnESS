@@ -11,7 +11,7 @@ return array(
 	'language'=>'zh_cn',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	// 'preload'=>array('log'),
 
 	// autoloading model and component classes
 	'import'=>array(
