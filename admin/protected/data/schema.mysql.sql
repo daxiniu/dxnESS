@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS user (
   id int auto_increment NOT NULL  primary key,
   username varchar(32) NOT NULL unique,
   password varchar(32) NOT NULL,
-  email varchar(256) not null default '0',
+  email varchar(256) not null default  '',
   user_type int(3) default 0,
   status int(3) default 0,
   avatar varchar(256) not null default '',
