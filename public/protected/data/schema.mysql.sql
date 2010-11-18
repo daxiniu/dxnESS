@@ -1,9 +1,10 @@
-use daxiniu;
-drop table user;
-drop table admin;
-drop table post;
-drop table attachment;
-drop table category;
+-- use daxiniu;
+-- drop table user;
+-- drop table admin;
+-- drop table post;
+-- drop table attachment;
+-- drop table category;
+
 CREATE TABLE IF NOT EXISTS user (
   id int auto_increment NOT NULL  primary key,
   username varchar(32) NOT NULL unique,
